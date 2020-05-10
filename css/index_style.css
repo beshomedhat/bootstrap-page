@@ -1,0 +1,409 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h2
+{
+    font-size: 38px;
+}
+/* ------------------------------------------------------------------ */
+.navbar
+{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.nav-ico
+{
+    padding-left: 10px;
+}
+.nav-ico li
+{
+    display: inline;
+    color: white; 
+}
+/* -------------------------- HOme ---------------------------------- */
+.home
+{
+    background-image: url(../images/bg-image-28.jpg);
+    height: 750px;
+    background-size: 100% 100%;   
+}
+.home2
+{
+    background-image: url(../images/bg-image-29.jpg);
+    height: 750px;
+    background-size: 100% 100%;   
+}
+.home-page
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.home-caption h1
+{
+    font-size: 100px;
+    opacity: 0;
+    animation-name: home-caption;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.home-caption h4
+{
+    font-size: 18px;
+    opacity: 0;
+    animation-name: home-caption2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes home-caption
+{
+
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    
+}
+@keyframes home-caption2
+{
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+/* ------------------------------------------------------------------ */
+
+/* -------------------------- we-here ------------------------------- */
+.here-animation:before
+{
+    content: "";
+    animation-name: here-caption;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+    width: 100%;
+    height: 100%;
+    color: #00c3da;
+}
+@keyframes here-caption
+{
+	0%{content: "|"}
+    2%{content: "a|"}
+    5%{content: "ap|"}
+    7%{content: "app|"}
+    10%{content: "apps|"}
+    11%{content: "apps|"}
+    12%{content: "app|"}
+    15%{content: "ap|"}
+    17%{content: "a|"}
+    20%{content: "|"} 
+    
+    22%{content: "w|"}
+    25%{content: "we|"}
+    27%{content: "web|"}
+    30%{content: "webs|"}
+    32%{content: "websi|"}
+    35%{content: "websit|"}
+    37%{content: "website|"}
+    40%{content: "websites|"}
+    41%{content: "websites|"}
+    42%{content: "website|"} 
+    45%{content: "websit|"}
+    47%{content: "websi|"}
+    50%{content: "webs|"}
+    52%{content: "web|"}
+    55%{content: "we|"}
+    57%{content: "w|"}
+    60%{content: "|"}
+    
+    62%{content: "s|"}
+    65%{content: "so|"}
+    67%{content: "sof|"}
+    70%{content: "soft|"}
+    72%{content: "softw|"}
+    75%{content: "softwa|"}
+    77%{content: "softwar|"}
+    80%{content: "software|"}
+    82%{content: "softwares|"}
+    83%{content: "softwares|"}
+    84%{content: "softwares|"}
+    85%{content: "software|"}
+    87%{content: "softwar|"}
+    90%{content: "softwa|"}
+    92%{content: "softw|"}
+    94%{content: "soft|"}
+    96%{content: "sof|"}
+    98%{content: "so|"}
+    99%{content: "s|"}
+    100%{content: "|"}
+    
+}
+
+.btn-here:hover
+{
+    background-color: black ;
+    color: white;   
+}
+.here-p
+{
+    color: #787878;
+    font-size: 24px;
+}
+.here-h
+{
+    font-size: 13px;
+}
+/* ------------------------------------------------------------------ */
+
+/* -------------------------------- Mission ------------------------- */
+.mission
+{
+    border-top: 1px solid #787878;
+    border-bottom: 1px solid #787878;
+}
+.mission-info a
+{
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 11px;
+}
+.active-a
+{
+    border-bottom: 1px solid;
+}
+.mission-info
+{
+   color: #787878; 
+}
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------ Creative Team --------------------- */
+.creative-team h2
+{
+    font-size: 38px;
+}
+.creative-team p
+{
+    color: #787878;
+}
+.team-caption
+{
+    background-color: rgba(0, 195, 218, 0.9);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 10%;
+    left: 0%;
+    opacity: 0;
+    transition: all 1s;
+}
+.team-member:hover .team-caption
+{
+    top: 0%;
+    opacity: 1
+}
+.team-caption li
+{
+    display: inline;
+}
+.member-info
+{
+    position: absolute;
+    bottom: 10;
+    left:10;    
+}
+
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------ what we do ------------------------ */
+.we-do
+{
+    background-image: url(../images/bg-image-26.jpg);
+    background-size: cover; 
+}
+.what-we-do
+{
+    background-color: rgba(0,0,0,0.5);
+}
+.we-do-ico h4
+{
+    font-size: 13px;
+}
+
+.we-do-caption ul
+{
+   list-style-type:none;
+}
+
+.we-do-caption .we-do-h2:before
+{
+    content: "W";
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    color: rgba(1,1,1,0.2);
+    font-size: 70px;
+    left: 7%;
+    top:10%;
+}
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------ Our Work -------------------------- */
+.line
+{
+    height: 1px;
+    background-color: black;
+    width: 5%;
+    margin: auto;
+    transition: width 0.5s;
+}
+.our-work-h:hover .line
+{
+    width: 8%;
+}
+.ourwork-ul li
+{
+    border: #26CCDF 1px solid;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+}
+.item
+{
+    overflow: hidden;
+}
+.items-caption
+{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: -100%;
+    background-color: whitesmoke;
+    transition: bottom 1s;
+}
+.item:hover .items-caption
+{
+    bottom: 5%;
+}
+.item img
+{
+    width: 100%;
+    transition: transform 1s;
+}
+.item:hover img
+{
+    transform: scale(1.2 , 1.2);
+}
+.items-caption p
+{
+    position:relative;
+    left: 120%;
+    transition: left 1s 2s;
+}
+.item:hover .items-caption p
+{
+    left: 0%;
+}
+.items-caption h4
+{
+    position:relative;
+    left: 120%;
+    transition: left 1s 1s;
+}
+.item:hover .items-caption h4
+{
+    left: 0%;
+}
+/* ------------------------------------------------------------------ */
+
+/* --------------------------------- cheap-prices ------------------- */
+.prices
+{
+    overflow: hidden;
+}
+.price-title-p
+{
+    color: #787878;
+    font-size: 18px; 
+}
+.cheap-prices
+{
+    background-color: whitesmoke;
+}
+.cheap-prices h5
+{
+    font-size: 16px;
+}
+.cheap-prices .price-num
+{
+    border-bottom: 1px solid #787878; 
+    font-size: 55px;
+}
+.cheap-prices .price-num:before
+{
+    content: "$";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.best-price-h5
+{
+    padding: 5px 45% 5px 0;
+}
+.best-value
+{
+    border-radius: 20%;
+}
+.best-num
+{
+    color: #007bff;
+}
+.best-num:before
+{
+    content: "$";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #007bff;
+    
+}
+.col-lg-3 .best-cheap
+{
+    transform: scale(1 , 1.1);
+}
+/* ------------------------------------------------------------------ */
+
+
+/* ---------------------------------Get In Touch--------------------------------- */
+.contact-p
+{
+    color: #787878;
+    font-size: 18px;
+}
+textarea.form-control 
+{
+    height: 100px;
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------Copyright-----------------------*/
+.copyright
+{
+    width: 100%;
+    padding: 25px;
+    background-color: black;
+    overflow: hidden;
+}
+.copyright p
+{
+    color: #58606b;
+}
+/* --------------------------------------------------*/
